@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+{{this.model.personStatus}}
+{{#if this.model.isPersonStatusTwo}}
+  Person Status Is Two
+{{else}}
+  Person Status Ain't Two
+{{/if}}
+<button onclick={{this.changeStatusToTwo}}>
+  Change Status to 2
+</button>
